@@ -2,6 +2,10 @@
 
 **面向创始人、CEO、CTO 的生产级判断框架——奥地利学派六大可执行协议，由 AI agent 作为判断参谋调用。**
 
+![License](https://img.shields.io/github/license/gootf/austrian-judgment-protocol)
+![Release](https://img.shields.io/github/v/release/gootf/austrian-judgment-protocol)
+![Stars](https://img.shields.io/github/stars/gootf/austrian-judgment-protocol)
+
 大多数商业框架回答"如何规划"。这套回答更难的问题：**谁来判断、何时、依据什么**——在投入资本、回应竞对、下放决策、押注新市场之前。
 
 它不是知识库，是判断协议：理论被压缩为可执行决策程序、反模式和证据坐标；84 条 claim 全部可溯源到 9 本原著。完整链条是：**人类决策者做判断 → AI 作为判断参谋加载协议 → 输出结构化检查、反模式审计、证据坐标**。
@@ -40,6 +44,23 @@
 - **安装**：将 `SKILL.md` 作为技能加载；六个协议在 `references/protocols/`
 - **带场景提问**："分析这个竞对威胁"、"这事该下放决策吗"、"评估这个商业机会"——路由表在 SKILL.md
 - **带主题提问**：`alertness` / `case probability` / `strategy kernel` / `man on the spot` / `original judgment` / `three-stage process`
+
+## 快速开始
+
+```bash
+# 1. 获取 skill
+git clone https://github.com/gootf/austrian-judgment-protocol.git
+# 2. 把 SKILL.md + references/ 复制到你的 agent 技能目录
+#    （如 ~/.claude/skills/austrian-judgment-protocol/ 或你所用 agent 的等价目录）
+```
+
+然后向 agent 提问——三种路由方式：
+
+| 你问 | 你得到 |
+|---|---|
+| "竞对刚推出免费版，分析这个威胁。" | strategy-diagnosis：症状 vs 挑战、内核检查、不对称审计（R01/R04） |
+| "现在该为新项目投入资本吗？" | consumer-sovereignty：三阶段需求检验、分期投入 + kill criteria（P003, UX01） |
+| "这个决策能下放给团队吗？" | hayek-knowledge-problem：时间地点知识？可聚合？下放 + 协调（HX01） |
 
 ## 它刻意不做什么
 

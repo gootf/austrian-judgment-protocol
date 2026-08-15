@@ -2,6 +2,10 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+![License](https://img.shields.io/github/license/gootf/austrian-judgment-protocol)
+![Release](https://img.shields.io/github/v/release/gootf/austrian-judgment-protocol)
+![Stars](https://img.shields.io/github/stars/gootf/austrian-judgment-protocol)
+
 **A production-grade judgment framework for founders, CEOs, and CTOs — six executable protocols from the Austrian school of economics, designed to be run by AI agents as a decision advisor.**
 
 Most business frameworks answer *how to plan*. This one answers the harder questions: **who should decide, when, and on what evidence** — before you commit capital, respond to a competitor, delegate a decision, or bet on a new market.
@@ -40,6 +44,23 @@ The direct user is an **AI agent** (Hermes skill format): you describe a scenari
 - **Install**: load `SKILL.md` as a skill; `references/protocols/` holds the six protocols.
 - **Ask with a scenario**: "analyze this competitive threat", "should we delegate this decision?", "evaluate this opportunity" → routing table in SKILL.md.
 - **Ask with a topic**: `alertness`, `case probability`, `strategy kernel`, `man on the spot`, `original judgment`, `three-stage process`.
+
+## Quick start
+
+```bash
+# 1. Get the skill
+git clone https://github.com/gootf/austrian-judgment-protocol.git
+# 2. Copy SKILL.md + references/ into your agent's skills directory
+#    (e.g. ~/.claude/skills/austrian-judgment-protocol/ or your agent's equivalent)
+```
+
+Then ask your agent — three ways it routes:
+
+| You say | What you get |
+|---|---|
+| "A competitor just launched a free tier. Analyze this threat." | strategy-diagnosis: symptom vs challenge, kernel check, asymmetry audit (R01/R04) |
+| "Should we commit capital to this new venture now?" | consumer-sovereignty: three-stage demand test, staging + kill criteria (P003, UX01) |
+| "Can we delegate this decision to the team?" | hayek-knowledge-problem: time-and-place? aggregable? delegate + coordinate (HX01) |
 
 ## What it deliberately does NOT do
 
