@@ -1,0 +1,593 @@
+# claims.yaml — Austrian Judgment Protocol (merged claim ledger)
+
+# claim_type: source-derived (author's text, with evidence) | agent-derived (framework inference, must depend on at least one source-derived) | cross-source-derived (cross-book combination, depends_on across sources)
+# Evidence: author and book title. Confidence is an EVIDENCE TIER, not a truth probability (Austrian praxeology is apodictic, no probability grading applies):
+#   high = directly from the author's text (source-derived); medium = framework inference or empirical claim with weaker support (agent/cross-source-derived).
+# ID prefixes: K/KX (Kirzner), M/B/AF/TI/UX (Mises/Taleb/O'Driscoll-Rizzo), R/RX (Rumelt), H/HX (Hayek), FK/FA/FX (Foss & Klein), P/A (Packard).
+
+# ============ discovery-alertness (Kirzner) ============
+claims:
+  - id: K01
+    confidence: high
+    claim: "Alertness is the defining characteristic of entrepreneurship: entrepreneurship is discovering unnoticed opportunities, not executing a known plan."
+    claim_type: source-derived
+    evidence: "Kirzner, Competition and Entrepreneurship"
+    source: kirzner-competition-entrepreneurship
+    primitive: discovery-alertness
+  - id: K02
+    confidence: high
+    claim: "Market process: the task of price theory is to explain how the interaction of participants' decisions generates continuous changes in prices, outputs, and production methods."
+    claim_type: source-derived
+    evidence: "Kirzner, Competition and Entrepreneurship"
+    source: kirzner-competition-entrepreneurship
+    primitive: discovery-alertness
+  - id: K03
+    confidence: high
+    claim: "Equilibration: alertness discovers unnoticed opportunities → errors are corrected → movement toward equilibrium (equilibrium is the direction of the process, not a premise)."
+    claim_type: source-derived
+    evidence: "Kirzner, Competition and Entrepreneurship"
+    source: kirzner-competition-entrepreneurship
+    primitive: discovery-alertness
+  - id: K04
+    confidence: high
+    claim: "Discovery profit: profit is the return to discovering unnoticed opportunities ('alertness to hitherto unnoticed opportunities')."
+    claim_type: source-derived
+    evidence: "Kirzner, Competition and Entrepreneurship"
+    source: kirzner-competition-entrepreneurship
+    primitive: discovery-alertness
+  - id: K07
+    confidence: high
+    claim: "Competition as a discovery process: competition (including selling costs) is the mechanism by which entrepreneurs discover consumer knowledge."
+    claim_type: source-derived
+    evidence: "Kirzner, Competition and Entrepreneurship"
+    source: kirzner-competition-entrepreneurship
+    primitive: discovery-alertness
+  - id: K08
+    confidence: medium
+    claim: "CEO opportunity search is based on alertness, not plan execution — 'why entrepreneurship is not executing a plan'."
+    claim_type: agent-derived
+    depends_on: [K01]
+    primitive: discovery-alertness
+  - id: KX01
+    confidence: medium
+    claim: "Cross-source rule: secrets (Thiel) are a variant phrasing of alertness — unnoticed opportunities ('important but undiscovered facts')."
+    claim_type: cross-source-derived
+    depends_on: [K01]
+    primitive: discovery-alertness
+  - id: KX02
+    confidence: medium
+    claim: "Cross-source rule: discovery × demand validation (Packard A001) — opportunities must pass consumer-demand validation, not rely on alertness alone."
+    claim_type: cross-source-derived
+    depends_on: [K01, P001]
+    primitive: discovery-alertness
+  - id: KX03
+    confidence: medium
+    claim: "Cross-source rule: weak-signal identification — on sales decline, check weak signals (alertness) before attributing to the market."
+    claim_type: cross-source-derived
+    depends_on: [K04, R01]
+    primitive: discovery-alertness
+
+# ============ uncertainty-management (Mises / Taleb / O'Driscoll-Rizzo) ============
+  - id: M02
+    confidence: high
+    claim: "Case probability is not computable: class probability can use frequency statistics (natural science); unique events/entrepreneurial judgment can only be treated qualitatively."
+    claim_type: source-derived
+    evidence: "Mises, Human Action"
+    source: mises-human-action
+    primitive: uncertainty-classification
+  - id: M03
+    confidence: medium
+    claim: "The boundary of probability theory in praxeology: 'puzzle' (solvable) vs 'mystery' (unsolvable) — AI can handle only the former."
+    claim_type: agent-derived
+    depends_on: [M02]
+    source: mises-human-action
+    primitive: uncertainty-classification
+  - id: M04
+    confidence: high
+    claim: "Entrepreneurial judgment rests on case probability: original judgment cannot be outsourced to data or algorithms."
+    claim_type: source-derived
+    evidence: "Mises, Human Action"
+    source: mises-human-action
+    primitive: uncertainty-classification
+  - id: B01
+    confidence: high
+    claim: "Black swan: rarity + extreme impact + retrospective (not prospective) predictability."
+    claim_type: source-derived
+    evidence: "Taleb, The Black Swan"
+    source: taleb-black-swan
+    primitive: uncertainty-classification
+  - id: B02
+    confidence: high
+    claim: "Ludic fallacy: gamified models (casino probabilities) ≠ real-world uncertainty — model-based certainty is an illusion."
+    claim_type: source-derived
+    evidence: "Taleb, The Black Swan"
+    source: taleb-black-swan
+    primitive: uncertainty-classification
+  - id: B03
+    confidence: high
+    claim: "Narrative fallacy: the mind forces patterns — 'the Black Swan is what we leave out of simplification'."
+    claim_type: source-derived
+    evidence: "Taleb, The Black Swan"
+    source: taleb-black-swan
+    primitive: uncertainty-classification
+  - id: B06
+    confidence: high
+    claim: "Forecast confidence ≠ forecasting ability: systematic overconfidence of expert prediction."
+    claim_type: source-derived
+    evidence: "Taleb, The Black Swan"
+    source: taleb-black-swan
+    primitive: uncertainty-classification
+  - id: AF01
+    confidence: high
+    claim: "Triad: fragile (harmed by volatility) / robust (unaffected) / antifragile (benefits from volatility)."
+    claim_type: source-derived
+    evidence: "Taleb, Antifragile"
+    source: taleb-antifragile
+    primitive: uncertainty-classification
+  - id: AF03
+    confidence: high
+    claim: "Barbell strategy: extreme conservatism + extreme aggressiveness (rejects the middle) — the conversion mechanism from fragile to antifragile."
+    claim_type: source-derived
+    evidence: "Taleb, Antifragile"
+    source: taleb-antifragile
+    primitive: uncertainty-classification
+  - id: AF04
+    confidence: high
+    claim: "Fundamental asymmetry: antifragile systems require upside > downside (limited loss, unlimited gain)."
+    claim_type: source-derived
+    evidence: "Taleb, Antifragile"
+    source: taleb-antifragile
+    primitive: uncertainty-classification
+  - id: AF05
+    confidence: high
+    claim: "Optionality: benefiting without knowing what will happen — keeping options beats forecasting (Thales' olive presses)."
+    claim_type: source-derived
+    evidence: "Taleb, Antifragile"
+    source: taleb-antifragile
+    primitive: uncertainty-classification
+  - id: TI01
+    confidence: high
+    claim: "Uncertainty and time structure: the passage of time makes knowledge obsolete — time and ignorance (O'Driscoll & Rizzo)."
+    claim_type: source-derived
+    evidence: "O'Driscoll & Rizzo, The Economics of Time and Ignorance"
+    source: o-driscoll-rizzo
+    primitive: uncertainty-classification
+    dimension: time_ignorance
+  - id: UX01
+    confidence: medium
+    claim: "Cross-source rule: irreversible actions require the highest evidence bar — predefine kill criteria (case probability × time structure)."
+    claim_type: cross-source-derived
+    depends_on: [M02, AF04]
+    primitive: uncertainty-classification
+
+# ============ strategy-diagnosis (Rumelt) ============
+  - id: R01
+    confidence: high
+    claim: "Diagnosis first: 'The first step toward effective strategy is diagnosing the specific structure of the challenge rather than simply naming performance goals' — strategy is not ambition/leadership/vision/planning/economic logic."
+    claim_type: source-derived
+    evidence: "Rumelt, Good Strategy, Bad Strategy"
+    source: rumelt-good-strategy
+    primitive: diagnosis-first
+  - id: R02
+    confidence: high
+    claim: "The strategy kernel — three elements: diagnosis (defines the challenge, simplifies complexity) + guiding policy (direction, 'like a signpost') + coherent action (feasible coordinated policies, resource commitments — 'the punch in the strategy')."
+    claim_type: source-derived
+    evidence: "Rumelt, Good Strategy, Bad Strategy"
+    source: rumelt-good-strategy
+    primitive: diagnosis-first
+  - id: R03
+    confidence: high
+    claim: "Bad strategy detection: fluff/slogans/blue-sky objectives/template-style strategy — strategy without diagnosis ('it does not answer what challenge and why this action, it is not strategy')."
+    claim_type: source-derived
+    evidence: "Rumelt, Good Strategy, Bad Strategy"
+    source: rumelt-good-strategy
+    primitive: diagnosis-first
+  - id: R04
+    confidence: high
+    claim: "Asymmetric advantage: 'advantage is rooted in differences—in the asymmetries among rivals' — identify critical asymmetries and turn them into advantages (high-ground example)."
+    claim_type: source-derived
+    evidence: "Rumelt, Good Strategy, Bad Strategy"
+    source: rumelt-good-strategy
+    primitive: diagnosis-first
+  - id: R05
+    confidence: high
+    claim: "Resource commitment is part of strategy: coherent action = coordinated policies + resource commitments — not a downstream implementation step."
+    claim_type: source-derived
+    evidence: "Rumelt, Good Strategy, Bad Strategy"
+    source: rumelt-good-strategy
+    primitive: diagnosis-first
+  - id: RX01
+    confidence: medium
+    claim: "Anti-goal-fallacy rule (cross-source): 'what should our goal be?' — refuse the goal frame, produce the diagnosis first (R01+R03+P001 demand validation first)."
+    claim_type: cross-source-derived
+    depends_on: [R01, R03, P001]
+    primitive: diagnosis-first
+  - id: RX02
+    confidence: medium
+    claim: "Kernel completeness check (cross-source): any strategic proposal must expose the kernel — diagnosis (who judges, F&K) + policy (coordination constraints, Hayek) + action (resource commitments) (R02+FK02+H05)."
+    claim_type: cross-source-derived
+    depends_on: [R02, FK02, H05]
+    primitive: diagnosis-first
+  - id: RX03
+    confidence: medium
+    claim: "Competitive-response rule (cross-source): competitor action ≠ imitation — diagnose the threat first (value perception/segment/economics), then respond from your own critical asymmetries (R01+R04+P002)."
+    claim_type: cross-source-derived
+    depends_on: [R01, R04, P002]
+    primitive: diagnosis-first
+
+# ============ hayek-knowledge-problem (Hayek) ============
+  - id: H01
+    confidence: high
+    claim: "Knowledge is dispersed: 'the knowledge of the circumstances of which we must make use never exists in concentrated or integrated form but solely as the dispersed bits of incomplete and frequently contradictory knowledge' — the problem of knowledge use = no one possesses the whole."
+    claim_type: source-derived
+    evidence: "Hayek, The Use of Knowledge in Society"
+    source: hayek-use-of-knowledge
+    primitive: knowledge-distribution
+  - id: H02
+    confidence: high
+    claim: "Time-and-place knowledge: important but non-scientific knowledge — 'the knowledge of the particular circumstances of time and place'; every individual has an advantage through unique information (shipper/estate agent/arbitrageur examples)."
+    claim_type: source-derived
+    evidence: "Hayek, The Use of Knowledge in Society"
+    source: hayek-use-of-knowledge
+    primitive: knowledge-distribution
+    dimension: tacit
+  - id: H03
+    confidence: high
+    claim: "Central impossibility: 'the data from which the economic calculus starts are never for the whole society given to a single mind'; statistics abstract away location/quality and other decision-relevant particulars."
+    claim_type: source-derived
+    evidence: "Hayek, The Use of Knowledge in Society"
+    source: hayek-use-of-knowledge
+    primitive: knowledge-distribution
+    dimension: institutional
+  - id: H04
+    confidence: high
+    claim: "The price system = information mechanism: 'the economy of knowledge with which it operates' — participants act correctly without knowing the cause (tin example)."
+    claim_type: source-derived
+    evidence: "Hayek, The Use of Knowledge in Society"
+    source: hayek-use-of-knowledge
+    primitive: knowledge-distribution
+  - id: H05
+    confidence: high
+    claim: "Local judgment allocation: 'the ultimate decisions must be left to the people who are familiar with these circumstances' — but the man on the spot needs coordination signals (decentralization + coordination, not isolation)."
+    claim_type: source-derived
+    evidence: "Hayek, The Use of Knowledge in Society"
+    source: hayek-use-of-knowledge
+    primitive: knowledge-distribution
+    dimension: institutional
+  - id: HX01
+    confidence: medium
+    claim: "Anti-central-planning rule (cross-source): reporting chains produce filtered, lagging, second-hand knowledge — central decisions must not rest on aggregated information alone; sample the raw periphery (H01-H03 + FK11 middle-manager information filters)."
+    claim_type: cross-source-derived
+    depends_on: [H01, H02, H03, FK11]
+    primitive: knowledge-distribution
+  - id: HX02
+    confidence: medium
+    claim: "Local knowledge recognition rule (cross-source): when a decision depends on time-and-place knowledge, the decision right belongs to the person closest to the facts (man on the spot); the center sets constraints and coordination only (H02 + H05 + FK02 + FK10)."
+    claim_type: cross-source-derived
+    depends_on: [H02, H05, FK02, FK10]
+    primitive: knowledge-distribution
+
+# ============ entrepreneurial-judgment-authority (Foss & Klein) ============
+  - id: FK01
+    claim: "The firm is the entrepreneur's arrangement of the capital assets he owns or can influence, to carry out the commercial experiment that embodies his judgment."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK02
+    claim: "Original judgment is the entrepreneurial formation and execution of a business idea; derived judgment is employee judgment exercised within limits set by the entrepreneur's plan."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK03
+    claim: "Employees exercising derived judgment are proxy entrepreneurs; the entrepreneur makes his employees entrepreneurs themselves (Knight 1921:276)."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK04
+    claim: "Proxy entrepreneurship is productive (increases firm value) or destructive (reduces firm value, rent-seeking, influence activities); contracts and organizational design balance the two."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK05
+    claim: "Knightian hierarchy judges subordinates' capacity to deal with problems, not concrete knowledge of the problems."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK06
+    claim: "Contracts are incomplete not because completeness is costly, but because complete contracts curb entrepreneurial activities, both productive and destructive."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK07
+    claim: "Under Knightian uncertainty, agents can exercise derived judgment beyond any predefined action set; formal contracts alone cannot limit discretion."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK08
+    claim: "Decision rights are delegated as means to an end (Hayek 1973), their use is monitored, and top management reserves ultimate decision rights; even knowledge-based firms need centralized coordination."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK09
+    claim: "Dispersed knowledge (Hayek 1945; Polanyi 1962) — knowledge not possessed by any single mind, private, fleeting, tacit, subjectively held — challenges authority and firm boundaries."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: knowledge-distribution
+  - id: FK10
+    claim: "The response to dispersed knowledge is authority backed by ownership, which maximizes joint surplus."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FK11
+    claim: "Middle managers function as information filters and their resource-allocation decisions signal project legitimacy to employees."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: knowledge-distribution
+  - id: FK12
+    claim: "Optimal organizational structure encourages productive proxy entrepreneurship while discouraging unproductive rent-seeking and influence activities."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Foss & Klein, Organizing Entrepreneurial Judgment"
+    source: foss-klein-organizing-entrepreneurial-judgment
+    primitive: authority-assignment
+  - id: FA01
+    claim: "Delegation decisions should classify original vs derived judgment first, then match authority to knowledge, then design constraints and monitoring."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [FK02, FK05, FK08]
+    primitive: authority-assignment
+  - id: FA02
+    claim: "Authority-knowledge mismatch (retaining rights without capacity-judgment, or delegating to non-knowledge-holders) is malformed delegation."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [FK05, FK10]
+    primitive: authority-assignment
+  - id: FA03
+    claim: "Information filters are a feature: removing middle-manager filters centralizes noise and loses the legitimacy signal."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [FK11]
+    primitive: knowledge-distribution
+  - id: FX01
+    claim: "A CEO agent should not attempt to centralize all knowledge — dispersed knowledge (Hayek) plus authority backed by ownership (F&K) implies decision rights stay distributed with monitoring, and ultimate rights stay at the top."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [FK08, FK09, FK10, H01]
+    primitive: anti-central-planning
+  - id: FX02
+    claim: "Technical-debt refactoring vs feature-velocity conflicts are judgment-classification problems: decide by who holds original judgment (F&K), what the strategic kernel requires (Rumelt), and how knowledge is distributed (Hayek) — not by preference."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [FK02, FK06, R02, H01]
+    primitive: authority-assignment
+  - id: FX03
+    claim: "Complete contracts kill entrepreneurial activity (F&K); uncertainty-reduction experiments beat forecasts (Packard A005) — together: agent agreements should be incomplete by design, with monitored discretion and reserved ultimate rights."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [FK06, FK08, A005]
+
+    primitive: authority-assignment
+# ============ capability-boundary dimension (Christensen, authority-assignment extension) ============
+  - id: CH02
+    claim: "Resource dependence: managers believe they control resource allocation, but customers and investors actually decide — firms have mature systems for 'killing ideas their customers don't want' → they cannot invest in disruptive opportunities with low margins or not-yet-wanted by customers; when customers want them, it is too late."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Christensen, The Innovator's Dilemma"
+    source: christensen-innovators-dilemma
+    primitive: authority-assignment
+  - id: CH04
+    claim: "The innovator's dilemma: 'It is in disruptive innovations, where we know least about the market, that there are such strong first-mover advantages' — first-mover advantage is strongest where we know least about the market."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Christensen, The Innovator's Dilemma"
+    source: christensen-innovators-dilemma
+    primitive: authority-assignment
+  - id: CH05
+    claim: "The boundary of planning: 'Companies whose investment processes demand quantification of market sizes and financial returns... get paralyzed or make serious mistakes when faced with disruptive technologies' — managing disruptive innovation with sustaining-technology planning methods = 'an exercise in flapping wings'."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Christensen, The Innovator's Dilemma"
+    source: christensen-innovators-dilemma
+    primitive: authority-assignment
+  - id: CH06
+    claim: "Organization-scale matching: established firms that successfully enter disruptive new markets hand commercialization to an independent organization matched to the target market's size — 'formal and informal resource allocation processes make it very difficult for large organizations to focus adequate energy and talent on small markets'."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Christensen, The Innovator's Dilemma"
+    source: christensen-innovators-dilemma
+    primitive: authority-assignment
+  - id: CH08
+    claim: "Value network: a firm's framework for perceiving value is set by the customers it serves — decisions that are rational inside a value network (serving mainstream customers) become strategic blind spots outside it."
+    claim_type: source-derived
+    confidence: medium
+    evidence: "Christensen, The Innovator's Dilemma"
+    source: christensen-innovators-dilemma
+    primitive: authority-assignment
+  - id: CH07
+    claim: "Capability boundary: what an organization can execute ≠ what is technically possible — determined jointly by the value network (customer/investor structure) + resource-allocation processes + organization size; 'What can our organization actually execute?' is a judgment question independent of 'diagnosing the challenge' (Rumelt R01)."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [CH02, CH06, R01]
+    primitive: authority-assignment
+  - id: CH09
+    claim: "Runtime implication: a CTO vetoing business exploration on 'architectural elegance' grounds = exercising derived judgment beyond authority (F&K FK05); a CEO demanding quantified markets before funding = managing disruptive innovation with sustaining planning methods (CH05) — both failure modes now have theoretical anchors."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [CH05, FK05, R03]
+
+    primitive: authority-assignment
+# ============ consumer-sovereignty-and-entrepreneurship (Packard) ============
+  - id: P001
+    claim: "Entrepreneurship is the process by which unmet consumer needs are newly addressed."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P002
+    claim: "Consumers ultimately direct entrepreneurial activity (consumer sovereignty; 'the captain is the consumer')."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P003
+    claim: "The entrepreneurial process has three stages: discovery/recognition (consumer), solution generation (innovator), judgment/action (capitalist); all three must complete for venturing to occur."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P004
+    claim: "Opportunities are conjointly discovered by the consumer, solutions created by the innovator, expected outcomes imagined and judged by the capitalist; each is individually necessary and insufficient."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P005
+    claim: "Opportunity should be redefined as imperfectly satisfied consumer needs, not corrigible market imperfections."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P006
+    claim: "Innovation emerges only at the intersection of needs knowledge and technical (affordance) knowledge; one without the other is insufficient."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P007
+    claim: "Experts high in only one type of knowledge exhibit Einstellung effects: innovativeness decreases due to cognitive entrenchment."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P008
+    claim: "Of the moderators (personality, accessibility, engagement), only accessibility was empirically supported."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P009
+    claim: "The capitalist must make three judgments: total expected cost/viability, total economic value to consumers, and perception of the actor's abilities."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P010
+    claim: "Entrepreneurs systematically overestimate how widely their own need is shared, producing overconfidence in value estimates."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P011
+    claim: "Entrepreneurship cannot occur without the judgment of the capitalist, who is the ultimate bearer of risk as resource owner; non-owner decision rights are merely derived/delegated."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P012
+    claim: "The purpose of entrepreneurship is consumer well-being, not profit; entrepreneurship is inherently demand-pull."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P013
+    claim: "High-use consumers (lead users) hold the highest needs and generate the most valuable innovations; successful innovations must first meet early adopters' needs."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P014
+    claim: "Needs are latently existing and tacit; consumers learn of them through experience; producer-side needs knowledge is systematically incomplete."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P015
+    claim: "Consumer uncertainty about new solutions (not product quality alone) determines diffusion outcomes: S-curve, failures, chasm, first-mover advantage, continuous innovation."
+    claim_type: source-derived
+    confidence: medium
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: P016
+    claim: "Supply-side assumptions to reject: opportunity pre-existence, predictability, profit motivation, entrepreneur-as-growth-source."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+    primitive: demand-side-discovery
+  - id: A001
+    claim: "A CEO should verify the unmet need (Stage 1) before committing solution-building spend; the three-stage sequence implies need-validation precedes solution expenditure."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P001, P003]
+    note: "Sequential inference: the three stages are necessary but not sufficient → investment ordering"
+    primitive: demand-side-discovery
+  - id: A002
+    claim: "A technology-first team with unclear customer needs is at Einstellung risk; the fix is deliberate needs-knowledge acquisition (lead-user engagement) before solution commitment."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P006, P007, P013]
+    primitive: demand-side-discovery
+  - id: A003
+    claim: "Decision processes should build in disconfirmation (independent demand checks) because founder conviction systematically overestimates value."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P010]
+    primitive: demand-side-discovery
+  - id: A004
+    claim: "Evaluate any proposal as a 3-condition conjunction (need / knowledge / judgment); return proposals to the failed condition rather than kill-or-fund wholesale."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P003, P004]
+    primitive: demand-side-discovery
+  - id: A005
+    claim: "Prefer uncertainty-reduction experiments (need validation, market tests) over forecasts when committing resources."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P012, P015, P016]
+    primitive: demand-side-discovery
+  - id: A006
+    claim: "When a team has needs knowledge but lacks technical/affordance knowledge, the viable path is affordance search (uncertain search) or partnership."
+    claim_type: agent-derived
+    confidence: medium
+    depends_on: [P006]
+    evidence: "Packard, Consumer Sovereignty and Entrepreneurship"
+    source: packard-consumer-sovereignty
+
+    primitive: demand-side-discovery
