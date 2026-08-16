@@ -44,12 +44,12 @@ Terms fall into three classes (marked in the source files):
 
 ## Provenance
 
-- claims.yaml: 84 claims, each with author + book title. claim_type marks: source-derived (author's text) / agent-derived (framework inference, dependencies marked) / cross-source-derived (cross-book combination).
-- Sources: Kirzner, *Competition and Entrepreneurship*; Mises, *Human Action*; Taleb, *The Black Swan* & *Antifragile*; O'Driscoll & Rizzo, *The Economics of Time and Ignorance*; Rumelt, *Good Strategy, Bad Strategy*; Hayek, "The Use of Knowledge in Society"; Foss & Klein, *Organizing Entrepreneurial Judgment*; Packard, *Consumer Sovereignty and Entrepreneurship*.
+- claims.yaml: 90 claims, each with author + book title. claim_type marks: source-derived (author's text) / agent-derived (framework inference, dependencies marked) / cross-source-derived (cross-book combination).
+- Sources: Kirzner, *Competition and Entrepreneurship*; Mises, *Human Action*; Ekelund & Saurman, *Advertising and the Market Process*; Taleb, *The Black Swan* & *Antifragile*; O'Driscoll & Rizzo, *The Economics of Time and Ignorance*; Rumelt, *Good Strategy, Bad Strategy*; Hayek, "The Use of Knowledge in Society"; Foss & Klein, *Organizing Entrepreneurial Judgment*; Packard, *Consumer Sovereignty and Entrepreneurship*.
 
 ## Files
 
-- `claims.yaml` — merged claim ledger (84 claims, ID prefixes: K/KX, M/B/AF/TI/UX, R/RX, H/HX, FK/FA/FX, CH, P/A)
+- `claims.yaml` — merged claim ledger (90 claims, ID prefixes: K/KX, AD, M/B/AF/TI/UX, R/RX, H/HX, FK/FA/FX, CH, P/A)
 - `references/protocols/` — six protocol files (full decision procedures, anti-patterns, scenario translations)
 - `references/glossary.md` — terms
 - `references/patterns.md` — 10 reusable decision patterns

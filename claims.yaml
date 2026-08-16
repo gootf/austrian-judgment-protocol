@@ -591,3 +591,46 @@ claims:
     source: packard-consumer-sovereignty
 
     primitive: demand-side-discovery
+
+# ============ advertising-market-process (Ekelund & Saurman, Kirzner foreword) ============
+  - id: AD01
+    claim: "Advertising is integral to the competitive market process: in the neo-Austrian view competition is a rivalrous process in perpetual disequilibrium, and advertising is an essential means through which entrepreneurs increase product utility to consumers (quality changes, warranty, availability)."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Ekelund & Saurman, Advertising and the Market Process"
+    source: ekelund-saurman-advertising-market-process
+    primitive: discovery-alertness
+  - id: AD02
+    claim: "Open-ended universe (Kirzner): consumers may be ignorant of their own ignorance; advertising is attention-grabbing that opens consumers' eyes to opportunities they had failed to notice — not preference manipulation. In a closed universe eyes cannot be opened because they were never closed."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Kirzner, Foreword to Ekelund & Saurman, Advertising and the Market Process"
+    source: kirzner-foreword-advertising
+    primitive: discovery-alertness
+  - id: AD03
+    claim: "Advertising itself is indirect information: the fact that a brand advertises conveys existence information even when the ad contains no price or quality content; the more frequently a good is advertised, the more likely consumers encounter it and purchase (both new and established products)."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Ekelund & Saurman, Advertising and the Market Process"
+    source: ekelund-saurman-advertising-market-process
+    primitive: discovery-alertness
+  - id: AD04
+    claim: "Search/experience/credence goods: goods differ in how consumers can evaluate quality — search (inspectable before purchase), experience (evaluable only after purchase), credence (not reliably evaluable even after); the informational role of advertising and the shape of consumer uncertainty differ by type."
+    claim_type: source-derived
+    confidence: high
+    evidence: "Ekelund & Saurman, Advertising and the Market Process"
+    source: ekelund-saurman-advertising-market-process
+    primitive: discovery-alertness
+  - id: AD05
+    claim: "Consumer sovereignty is not violated by advertising (Hayek's reply to the dependence effect): few wants are innate; wants are shaped by cultural environment of which advertising is part; consumers cannot react without information — 'to say that a desire is not important because it is not innate is to say that the whole cultural achievement of man is not important.'"
+    claim_type: source-derived
+    confidence: high
+    evidence: "Hayek via Ekelund & Saurman, Advertising and the Market Process"
+    source: ekelund-saurman-advertising-market-process
+    primitive: discovery-alertness
+  - id: AD06
+    claim: "Cross-source rule: competitor advertising changes (intensity, format, new campaigns) are weak signals of strategic intent — decode them with the SEC lens (what information is being conveyed to which consumer segment) before responding; advertising presence itself is information."
+    claim_type: cross-source-derived
+    confidence: medium
+    depends_on: [KX03, AD02, AD04]
+    primitive: diagnosis-first

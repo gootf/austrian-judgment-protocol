@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Strategy Diagnosis
 
-**Source**: Good Strategy, Bad Strategy (Rumelt 2011) | **Claims**: claims.yaml (8: 5 source-derived + 3 cross-source)
+**Source**: Good Strategy, Bad Strategy (Rumelt 2011) | **Claims**: claims.yaml (9: 5 source-derived + 4 cross-source)
 
 ## How to Use
 - **Without arguments**: load this framework (R01-R05 + 3 cross-source rules) as the baseline for strategic judgment
@@ -63,6 +63,8 @@ claim_type: cross-source-derived | depends_on: [R02, FK02, H05]
 
 ### Competitive-Response Rule (R04 + P002)
 > When a competitor acts (free tier, price cut, feature launch): do NOT copy the competitor's action. Diagnose first — is the threat to your customers' value perception, your segment, your economics? Then identify YOUR critical asymmetries (R04) and respond from them, not from the competitor's move.
+>
+> **Advertising variant** (AD06): competitor ad campaigns are weak signals of strategic intent — decode with the SEC lens (what information to which segment) before responding.
 
 claim_type: cross-source-derived | depends_on: [R01, R04, P002]
 

@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Discovery Alertness — Opportunity Discovery Judgment Protocol
 
-**Sources**: Kirzner *Competition and Entrepreneurship* | **Claims**: claims.yaml (9: 5 source-derived + 3 cross-source + 1 agent)
+**Sources**: Kirzner *Competition and Entrepreneurship* | Ekelund & Saurman *Advertising and the Market Process* | **Claims**: claims.yaml (14: 10 source-derived + 3 cross-source + 1 agent)
 
 ## How to Use
 - **Without arguments**: load this framework (4 procedures) as the baseline for opportunity judgment
@@ -24,12 +24,16 @@ version: 1.0.0
 - **Discovery profit** (K04): profit = return to unnoticed opportunities
 - **Competition as discovery process** (K07): competition is the mechanism by which entrepreneurs discover consumer knowledge
 - **Secrets** (KX01): Thiel — "important but undiscovered facts" = variant phrasing of alertness
+- **Open-ended universe** (AD02): consumers may be ignorant of their own ignorance; advertising opens eyes to unnoticed opportunities — not preference manipulation
+- **Advertising as indirect information** (AD03): the fact that a brand advertises is itself existence information, even with no price/quality content
+- **Search/experience/credence goods** (AD04): quality evaluation differs by type — inspectable before, after, or never reliably; consumer uncertainty and the informational role of advertising differ accordingly
 
 ## Decision Procedures (4, executable)
 1. **Opportunity-search mode** (K01/K08): ask "what is unnoticed?" rather than "what is the plan?" — CEO search is alertness-based
 2. **Weak-signal identification** (K04/KX03): growth/sales/customer-behavior changes → check weak signals first (opportunity/threat) rather than attributing to the market
 3. **Equilibration correction** (K03): identify mispricing/misallocation → corrective action (before others)
 4. **Demand-side cross-validation** (KX02): discovered "opportunities" must pass consumer-demand validation (Packard's three stages) — otherwise it is an illusion
+5. **Competitive-signal decoding** (AD03/AD04/AD06): competitor advertising changes (intensity, format, new campaigns) are weak signals — decode with the SEC lens before responding; advertising presence itself is information
 
 ## Anti-patterns
 1. Treating "plan execution" as entrepreneurship (opportunity search without alertness)
@@ -46,13 +50,13 @@ version: 1.0.0
 | Pivot | Value-network change detection |
 
 ## Connections (cross-skill)
-- consumer-sovereignty (Packard): discovery × demand validation (KX02 ↔ P001)
+- consumer-sovereignty (Packard): discovery × demand validation (KX02 ↔ P001); advertising does not violate consumer sovereignty — wants are shaped by information (AD05 ↔ P012)
 - strategy-diagnosis (Rumelt): diagnosis first — understand the challenge before acting (KX03 ↔ R01)
 - hayek-knowledge-problem: knowledge location of weak signals (who holds time-and-place knowledge — H02)
 - uncertainty-management: optionality = preserving discovery capacity (AF05 ↔ K01)
 
 ## Provenance
-- claims.yaml (9 claims; source: Kirzner, Competition and Entrepreneurship)
+- claims.yaml (14 claims; sources: Kirzner, Competition and Entrepreneurship; Ekelund & Saurman, Advertising and the Market Process + Kirzner foreword)
 
 ## Scope & Limits
 - **Boundaries**: does not predict specific opportunities; does not replace demand research (demand validation lives in the consumer-sovereignty protocol)

@@ -1,7 +1,5 @@
 # Glossary — Austrian Judgment Protocol
-
-*Terms alphabetized. Source noted per term: [F&K] = Foss & Klein, Organizing Entrepreneurial Judgment; [Packard] = Packard; [Kirzner] = Competition and Entrepreneurship; [Mises] = Human Action; [Taleb] = The Black Swan & Antifragile; [Hayek] = The Use of Knowledge in Society; [framework] = this framework's own terms. Provenance: (section, page).*
-
+*Terms alphabetized. Source noted per term: [F&K] = Foss & Klein, Organizing Entrepreneurial Judgment; [Packard] = Packard; [Kirzner] = Competition and Entrepreneurship; [Mises] = Human Action; [Taleb] = The Black Swan & Antifragile; [Hayek] = The Use of Knowledge in Society; [E&S] = Ekelund & Saurman, Advertising and the Market Process; [framework] = this framework's own terms. Provenance: (section, page).*
 - **Affordance** — a use to which a resource may be employed under the proper circumstances; knowledge of affordances derives from technical knowledge and expertise (Gibson 1966; Penrose 1959). [Packard] (Ch2, p29-30)
 - **Alertness** — the propensity to notice unnoticed opportunities; the defining characteristic of entrepreneurship — opportunity discovery precedes plan execution. [Kirzner] (Competition and Entrepreneurship)
 - **Authority backed by ownership** — decision rights whose ultimate basis is ownership; serves to maximize joint surplus. [F&K] (Dispersed knowledge/authority, p213)
@@ -29,10 +27,12 @@
 - **Man on the spot** — the person closest to the particular circumstances of time and place; the ultimate decisions must be left to him, coordinated by signals. [Hayek] (The Use of Knowledge in Society)
 - **Middle managers as information filters** — middle managers filter information between employees and the entrepreneur and signal project legitimacy via resource allocation. [F&K] (Dispersed knowledge/authority, p213)
 - **Needs knowledge** — knowledge of consumers' needs (the problem side); tacit, personal, learned through experience (Witt 2001). [Packard] (Ch2, p13; Ch3, p45)
+- **Open-ended universe** — a world in which decisionmakers may be ignorant of their own ignorance and subject to genuine surprise; advertising is attention-grabbing that opens consumers' eyes to unnoticed opportunities, not preference manipulation. [E&S, Kirzner foreword]
 - **Original judgment** — the entrepreneurial formation and execution of a business idea; held by the entrepreneur-owner (or jointly by an ownership group). [F&K] (Original and derived judgment, p192-193)
 - **Producer uncertainty** — entrepreneurs' inability to assure at judgment time that the solution will be accepted by consumers; "the hallmark of entrepreneurship" (Knight 1921). [Packard] (Ch2, p34)
 - **Proxy entrepreneurship** — employees exercising derived judgment; the entrepreneur "makes his employees entrepreneurs themselves" (Knight 1921:276); productive (value-increasing) or destructive (value-reducing, rent-seeking, influence activities). [F&K] (ch08 opening; Original and derived judgment, p192-194)
 - **Reversibility assessment** — framework rule: irreversible actions require the highest evidence bar; stage commitments and predefine kill criteria. [framework] (UX01)
+- **Search/experience/credence goods** — goods classified by how consumers can evaluate quality: search (inspectable before purchase), experience (evaluable only after purchase), credence (not reliably evaluable even after); the informational role of advertising and consumer uncertainty differ by type. [E&S] (ch4)
 - **Solution generation** — the second entrepreneurial stage: creative construction of solutions by applying useful knowledge to a recognized need (innovator's role). [Packard] (Ch2, p27-29)
 - **Technical knowledge** — knowledge of resources, technologies, and their capabilities (the solution side). [Packard] (Ch3, p45)
 - **Three-stage entrepreneurial process** — discovery/recognition of unmet needs (consumer) → solution generation (innovator) → judgment/action (capitalist); all three must complete for venturing to occur. [Packard] (Ch2, p14, p27-28)
